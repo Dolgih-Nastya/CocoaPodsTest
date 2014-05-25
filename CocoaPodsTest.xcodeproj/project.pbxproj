@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		035AEA4949DC44AAA92544F8 /* libPods-CocoaPodsTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C93EF9EBC0D344BFBE6B193B /* libPods-CocoaPodsTest.a */; };
 		317F707B1931E512003B8138 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317F707A1931E512003B8138 /* Foundation.framework */; };
 		317F707D1931E512003B8138 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317F707C1931E512003B8138 /* CoreGraphics.framework */; };
 		317F707F1931E512003B8138 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317F707E1931E512003B8138 /* UIKit.framework */; };
@@ -19,6 +20,8 @@
 		317F70961931E512003B8138 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317F707E1931E512003B8138 /* UIKit.framework */; };
 		317F709E1931E512003B8138 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 317F709C1931E512003B8138 /* InfoPlist.strings */; };
 		317F70A01931E512003B8138 /* CocoaPodsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 317F709F1931E512003B8138 /* CocoaPodsTestTests.m */; };
+		317F70AC1931EA33003B8138 /* CPTAFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317F70AA1931EA33003B8138 /* CPTAFNetworkingViewController.m */; };
+		317F70AD1931EA33003B8138 /* CPTAFNetworkingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 317F70AB1931EA33003B8138 /* CPTAFNetworkingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		317F709B1931E512003B8138 /* CocoaPodsTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaPodsTestTests-Info.plist"; sourceTree = "<group>"; };
 		317F709D1931E512003B8138 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		317F709F1931E512003B8138 /* CocoaPodsTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaPodsTestTests.m; sourceTree = "<group>"; };
+		317F70A91931EA33003B8138 /* CPTAFNetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAFNetworkingViewController.h; sourceTree = "<group>"; };
+		317F70AA1931EA33003B8138 /* CPTAFNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTAFNetworkingViewController.m; sourceTree = "<group>"; };
+		317F70AB1931EA33003B8138 /* CPTAFNetworkingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPTAFNetworkingViewController.xib; sourceTree = "<group>"; };
+		722B3CD1DC8C4276B80FA635 /* Pods-CocoaPodsTest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodsTest.xcconfig"; path = "Pods/Pods-CocoaPodsTest.xcconfig"; sourceTree = "<group>"; };
+		C93EF9EBC0D344BFBE6B193B /* libPods-CocoaPodsTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CocoaPodsTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 				317F707D1931E512003B8138 /* CoreGraphics.framework in Frameworks */,
 				317F707F1931E512003B8138 /* UIKit.framework in Frameworks */,
 				317F707B1931E512003B8138 /* Foundation.framework in Frameworks */,
+				035AEA4949DC44AAA92544F8 /* libPods-CocoaPodsTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,7 @@
 				317F70991931E512003B8138 /* CocoaPodsTestTests */,
 				317F70791931E512003B8138 /* Frameworks */,
 				317F70781931E512003B8138 /* Products */,
+				722B3CD1DC8C4276B80FA635 /* Pods-CocoaPodsTest.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +110,7 @@
 				317F707C1931E512003B8138 /* CoreGraphics.framework */,
 				317F707E1931E512003B8138 /* UIKit.framework */,
 				317F70931931E512003B8138 /* XCTest.framework */,
+				C93EF9EBC0D344BFBE6B193B /* libPods-CocoaPodsTest.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,6 +120,9 @@
 			children = (
 				317F70891931E512003B8138 /* CPTAppDelegate.h */,
 				317F708A1931E512003B8138 /* CPTAppDelegate.m */,
+				317F70A91931EA33003B8138 /* CPTAFNetworkingViewController.h */,
+				317F70AA1931EA33003B8138 /* CPTAFNetworkingViewController.m */,
+				317F70AB1931EA33003B8138 /* CPTAFNetworkingViewController.xib */,
 				317F708C1931E512003B8138 /* Images.xcassets */,
 				317F70811931E512003B8138 /* Supporting Files */,
 			);
@@ -151,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 317F70A31931E512003B8138 /* Build configuration list for PBXNativeTarget "CocoaPodsTest" */;
 			buildPhases = (
+				6ACE1E34E75D473FB9BCF39D /* Check Pods Manifest.lock */,
 				317F70731931E512003B8138 /* Sources */,
 				317F70741931E512003B8138 /* Frameworks */,
 				317F70751931E512003B8138 /* Resources */,
+				0C565AAB74F7470C97297C6C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				317F70851931E512003B8138 /* InfoPlist.strings in Resources */,
+				317F70AD1931EA33003B8138 /* CPTAFNetworkingViewController.xib in Resources */,
 				317F708D1931E512003B8138 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +252,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C565AAB74F7470C97297C6C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-CocoaPodsTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ACE1E34E75D473FB9BCF39D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		317F70731931E512003B8138 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -242,6 +292,7 @@
 			files = (
 				317F708B1931E512003B8138 /* CPTAppDelegate.m in Sources */,
 				317F70871931E512003B8138 /* main.m in Sources */,
+				317F70AC1931EA33003B8138 /* CPTAFNetworkingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +406,7 @@
 		};
 		317F70A41931E512003B8138 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 722B3CD1DC8C4276B80FA635 /* Pods-CocoaPodsTest.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -368,6 +420,7 @@
 		};
 		317F70A51931E512003B8138 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 722B3CD1DC8C4276B80FA635 /* Pods-CocoaPodsTest.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -438,6 +491,7 @@
 				317F70A51931E512003B8138 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		317F70A61931E512003B8138 /* Build configuration list for PBXNativeTarget "CocoaPodsTestTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +500,7 @@
 				317F70A81931E512003B8138 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

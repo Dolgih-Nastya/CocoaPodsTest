@@ -7,6 +7,7 @@
 //
 
 #import "CPTAppDelegate.h"
+#import "CPTAFNetworkingViewController.h"
 
 @implementation CPTAppDelegate
 
@@ -16,6 +17,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    self.window.rootViewController = [CPTAFNetworkingViewController new];
     return YES;
 }
 
